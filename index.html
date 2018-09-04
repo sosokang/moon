@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>给亲爱的人送一份祝福吧</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no, email=no" />
+<link href="css/base.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<script src="js/flexible.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- part1：进度条 -->
+        <div class="abs bar scaleCvs">
+            <canvas id="progressBar" width="540" height="1000"></canvas>
+        </div>
+        <div class="step0 hide abs">
+            <img src="img/music_off.png" class="icon music-off music-pause">
+            <audio id="music" src="img/music.mp3" loop></audio>
+            <div id="flower" class="abs"></div>
+            <div class="scaleCvs">
+                <canvas id="cloud" class="abs" width="1000" height="800"></canvas>
+            </div>
+        </div>
+        <!-- part2：嫦娥发月饼 -->
+        <div class="step1 hide abs">
+            <img src="img/moon.png" class="abs moon">
+            <img src="img/logo.png" class="logo">
+            <img src="img/tree.png" class="tree">
+            <div id="moonCake" class="abs scaleCvs">
+                <canvas id="cake" width="1000" height="1600"></canvas>
+            </div>
+            <img src="img/earth.png">
+            <div class="tips fade detail">
+                <p>这个中秋，</p>
+                <p>给亲爱的人送一份祝福吧！</p>
+            </div>
+        </div>
+        <!-- part3：选月饼 -->
+        <div class="step2 hide abs fade">
+            <img src="img/moon.png" class="abs moon">
+            <img src="img/logo.png" class="logo">
+            <img src="img/tree.png" class="tree">
+            <div class="icon music-off music-position"></div>
+            <div id="list">
+                <ul class="abs" id="moonCakes">
+                    <li class="lf cake cake1"></li>
+                    <li class="lf cake cake2"></li>
+                    <li class="lf cake cake3"></li>
+                    <li class="lf cake cake4"></li>
+                    <li class="lf cake cake5"></li>
+                    <li class="lf cake cake6"></li>
+                    <li class="lf cake cake7"></li>
+                    <li class="lf cake cake8"></li>
+                </ul>
+                <ul class="abs hide" id="cards">
+                    <li class="lf card card1"></li>
+                    <li class="lf card card2"></li>
+                    <li class="lf card card3"></li>
+                    <li class="lf card card4"></li>
+                    <li class="lf card card5"></li>
+                </ul>
+            </div>
+            <p class="detail">五仁月饼</p>
+            <img src="img/next.png" class="btn btn1">
+        </div>
+        <!-- part4：写祝福 -->
+        <div class="step3 hide abs">
+            <img src="img/moon.png" class="abs moon fade fadeItem">
+            <img src="img/logo.png" class="logo fade fadeItem">
+            <img src="img/tree.png" class="tree fade fadeItem">
+            <div class="icon music-off music-position"></div>
+            <div class="bgImg">
+                <img src="img/bg_inputbox@2x.png" class="img1 abs bg">
+                <img src="img/card.jpg" class="img2 abs hide bg">
+                <div class="bg_inputbox abs">
+                    <div class="box img1">
+                        <p class="boxBg">- 写下你的祝福 -</p>
+                        <div class="inputBox">
+                            <textarea id="textarea" class="textarea"></textarea>
+                            <span class="max">(最多30个字)</span>
+                            <p class="refresh" id="refresh">
+                                <i class="images"></i>
+                                <span>换一个试试</span>
+                            </p>
+                        </div>
+                        <div class="fromBox">
+                            <div class="fromName">来自：</div>
+                            <input type="text" id="inputVal" class="input">
+                        </div>
+                    </div>
+                </div>
+                <div class="boxText img2 lf rotateImg detail hide">
+                    <p class="oneRight">
+                        <span class="oneName"></span>送你一枚五仁月饼
+                    </p>
+                    <div class="one"></div>
+                </div>
+                <img class="cake-Img img2 rotateImg hide" src="img/wuren1.png">
+            </div>
+            <!-- 预览按钮 -->
+            <div class="preview">
+                <img src="img/view@2x.png">
+            </div>
+            <div class="previewTwo hide previewOne">
+                <div class="lf">
+                    <img src="img/back.png" class="back rt">
+                </div>
+                <div class="lf">
+                    <img src="img/send@2x.png" class="generate lf">
+                </div>
+            </div>
+        </div>
+        <div class="step4 hide abs">
+            <div class="icon music-off music-position"></div>
+            <img class="title" src="img/good.png">
+            <div class="userImg">
+                <div class="boxText detail rt">
+                    <p class="oneRight">
+                        <span class="oneName"></span>送你一枚五仁月饼
+                    </p>
+                    <div class="one"></div>
+                </div>
+                <img class="cake-Img" src="img/wuren1.png">
+            </div>
+            <div class="scaleCvs hide">
+                <canvas id="userCvs" width="560" height="746"></canvas>
+            </div>
+            <p class="conText detail">长按保存图片</p>
+            <!-- 在制作一次 关注公众号 -->
+            <div class="previewTwo followBg">
+                <div class="lf">
+                    <img src="img/view@2x_2.png" class="rt" id="makeAgain">
+                </div>
+                <div class="lf">
+                    <img src="img/send@2x_1.png" class="follow lf" id="follow">
+                </div>
+            </div>
+        </div>
+        <div class="step5 hide">
+            <div class="fix">
+                    <p class="fixText">保存图片</p>
+                    <p class="fixText clearImg">取消</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script src="js/share.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/three.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

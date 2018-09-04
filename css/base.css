@@ -1,0 +1,77 @@
+body{
+    width:100%;
+    padding:0;
+    margin:0;
+    font-family:"Microsoft Yahei";
+    overflow:hidden;
+}
+*{
+    padding:0;
+    margin:0;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style: none;
+}
+canvas{
+    display:block;
+    margin:0 auto;
+}
+input{
+    outline:none;
+}
+.hide{
+    display: none;
+}
+.lf{
+    float: left;
+}
+.rt{
+    float: right;
+}
+.abs{
+    position:absolute;
+    top:0;
+    left:0;
+}
+.icon{
+    display: inline-block;
+    width:52px;
+    height:52px;
+}
+.btn{
+    width:2.8rem;
+    height:0.88rem;
+}
+.container{
+    width:100%;
+    max-width: 640px;
+    margin:0 auto;
+    overflow:hidden;
+    position:relative;
+    background:url(../img/bg2.png) no-repeat;
+    background-size:100% 100%;
+}
+.fadeIn{
+    opacity:1 !important;
+}
+.fadeOut{
+    opacity:0 !important;
+}
+.textarea:focus{
+    outline-color: rgba(190,184,149,1);
+}
+.scaleCvs{
+    zoom:0.5;
+}
+.fade{
+    transition:opacity 1s linear;
+}
+.detail{
+    text-shadow:0px 1px 1px rgba(0,0,0,0.5);
+    color:#FFF299;
+    letter-spacing: 1px;
+    text-align: center;
+}
